@@ -47,7 +47,7 @@ slot-machine/
 ---
 
 ## 🖥️ Example Gameplay
-
+```
 🎰 Welcome to the Slot Machine! 🎰
   ⭐  |  🔔  |  🔔
 💵 Wallet: €31.00, 💵 Payout: €0.00, 💵 Session Winnings: €7.00
