@@ -70,7 +70,7 @@ Holds remaining: 0
 Clone the repository:
 
 ```
-git clone https://github.com/your-username/slot-machine.git
+git clone https://github.com/starfishgg/slot-machine.git
 cd slot-machine
 ```
 
