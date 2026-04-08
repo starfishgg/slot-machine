@@ -19,7 +19,7 @@ It features weighted reels, a hold mechanic, and a configurable payout system.
 
 Place your images inside a `/screenshots` folder in your repo.
 
-```id="o3i2nx"
+```
 slot-machine/
 ├── screenshots/
 │   ├── holdwin.png
@@ -47,7 +47,7 @@ slot-machine/
 ---
 
 ## 🖥️ Example Gameplay
-
+```
 🎰 Welcome to the Slot Machine! 🎰
   ⭐  |  🔔  |  🔔
 💵 Wallet: €31.00, 💵 Payout: €0.00, 💵 Session Winnings: €7.00
@@ -86,7 +86,7 @@ python slots.py
 
 ## 📁 Project Structure
 
-
+```
 slot-machine/
 │
 ├── main.py        # Entry point (game loop)
@@ -101,7 +101,7 @@ slot-machine/
 ## 🔧 Configuration
 
 All game settings are defined in `settings.py`:
-
+```
 SLOT_SYMBOLS = ["🍒", "🍋", "🍊", "🍉", "🔔", "⭐", "7️⃣", "BAR"]
 SLOT_WEIGHTS = [30, 20, 20, 15, 8, 4, 2, 1]
 
