@@ -17,17 +17,6 @@ It features weighted reels, a hold mechanic, and a configurable payout system.
 
 ## 📸 Screenshots
 
-Place your images inside a `/screenshots` folder in your repo.
-
-```
-slot-machine/
-├── screenshots/
-│   ├── holdwin.png
-│   └── loss.png
-```
-
-### Example
-
 ![Hold/Win Example](screenshots/holdwin.png)
 ![Lose Example](screenshots/loss.png)
 
