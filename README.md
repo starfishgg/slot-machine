@@ -91,6 +91,7 @@ slot-machine/
 │
 ├── main.py        # Entry point (game loop)
 ├── slots.py       # SlotMachine class
+├── app.py         # API Version (Flask Backend)
 ├── settings.py    # Game configuration (symbols, weights, payouts)
 ├── screenshots/   # Images for README
 └── README.md
@@ -129,12 +130,88 @@ SLOT_PAYOUTS = {
 
 ---
 
+## 🌐 API Version (Flask Backend)
+
+This project also includes a simple **Flask API** ('app.py') that exposes the slot machine logic over HTTP.
+
+Instead of playing in the console, you can trigger spins via a web request.
+
+---
+
+### ▶️ Running the API
+
+Install Flask (if not already installed):
+
+```bash
+pip install flask
+```
+
+Run the server:
+
+```bash
+python app.py
+```
+
+The server will start at:
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+### 🎰 Spin Endpoint
+
+Trigger a spin by visiting:
+
+```
+http://127.0.0.1:5000/spin
+```
+
+---
+
+### 📦 Example Response
+
+```json
+{
+  "result": ["🍒", "🍒", "🍒"],
+  "payout": 10,
+  "win": true,
+}
+```
+
+---
+
+### 🧠 How It Works
+
+* The API reuses the core `SlotMachine` class from `slots.py`
+* All spin logic, weights, and payouts are shared with the console version
+* The `/spin` endpoint:
+
+  * Spins all reels
+  * Calculates payout
+  * Returns the result as JSON
+
+---
+
+### ⚠️ Notes
+
+* The API currently maintains a **single shared game state**
+* Each request updates the same slot machine instance
+* This is fine for local testing, but not suitable for multi-user environments
+
+---
+
 ## 🛠️ Future Improvements
 
 * Link in to my more solid random number generator project
-* 🎨 GUI version (Tkinter/Pygame or web-based)
 * 🔊 Sound effects
 * 🎰 Animated/timed reel-strip implementation
+* 
+* API Version
+* Add endpoints for holding reels to the api version ( /hold )
+* Add player sessions (currently only a single shared game state)
+* Build a frontend (web UI) to interact with the API
 
 ---
 

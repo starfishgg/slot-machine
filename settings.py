@@ -36,3 +36,5 @@ SLOT_PAYOUTS = {
     ("🍉", 3): 6,
     ("🍉", 2): 2
 }
+
+SLOT_WHEELS = 3

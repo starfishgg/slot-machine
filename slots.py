@@ -1,10 +1,8 @@
 # slots.py
 # implementation of SlotMachine class
 
-
-
 import random # we can use previously implemented improved random number generator later
-from settings import SLOT_SYMBOLS, SLOT_WEIGHTS, SLOT_PAYOUTS, STARTING_CASH, SPIN_COST
+from settings import SLOT_SYMBOLS, SLOT_WEIGHTS, SLOT_PAYOUTS, STARTING_CASH, SPIN_COST, SLOT_WHEELS
 
 
 class SlotMachine:
@@ -13,7 +11,7 @@ class SlotMachine:
         self.symbols = SLOT_SYMBOLS
         self.weights = SLOT_WEIGHTS
         self.payouts = SLOT_PAYOUTS
-        self.reels = 3
+        self.reels = SLOT_WHEELS
         self.totalpayout = 0
         self.spincost = SPIN_COST
         self.startingmoney = STARTING_CASH
@@ -112,11 +110,10 @@ class SlotMachine:
         if best > 0:
             self.reset_holds()
             self.allowholds = False
-#        elif self.holdcount > self.maxholdcount:
-#                self.reset_holds()
-#                self.allowholds = False
         else:
-            self.allowholds = True # Keep allowing holds on a non-win   
+            self.allowholds = True # Keep allowing holds on a non-win
+            
+        return self.lastpayout
     
 
     def display(self):
