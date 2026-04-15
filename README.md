@@ -67,7 +67,8 @@ slot-machine/
 ## Screenshots
 
 ### Gameplay Example
-![Gameplay Screenshot](screenshots/gameplay.png)
+![Gameplay Screenshot](screenshots/holdwin.png)
+![Gameplay Screenshot 2](screenshots/loss.png)
 
 ### Statistical Analysis Output
 ![Analysis Screenshot](screenshots/analysis.png)
