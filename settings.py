@@ -1,5 +1,7 @@
 # settings.py
 
+EXPECTED_RTP = 0.97 # This is the theoretical Return to Player percentage, which we can use to check our simulation results against
+
 STARTING_CASH = 50
 SPIN_COST = 1 # changing this number from 1-3 will dramatically alter the ability to not go broke
 SLOT_WHEELS = 3

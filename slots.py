@@ -261,7 +261,6 @@ class SlotMachine:
         return True
 
 
-
     def start_machine(self):
         # Start the slot machine
         print(f"💵🎰💵 Welcome to the Slot Machine! 💵🎰💵 €{self.spincost}.00 to spin! \n")
